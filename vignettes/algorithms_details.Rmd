@@ -1,0 +1,39 @@
+---
+title: "algorithms_details"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{algorithms_details}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(coolfib)
+```
+
+El paquete contiene tres funciones con tres algoritmos para calcular el n-ésimo número de la secuencia de Fibonacci, (fibonacci_1, fibonacci_2 y fibonacci_3).
+
+Todas las funciones requieren únicamente de un sólo argumento x, con x >= 0
+
+x: Es el n-èsimo número en la secuencia de Fibonacci.
+
+Ejemplos:
+
+```{r fibonacci_1}
+fibonacci_1(3)
+```
+
+```{r fibonacci_2}
+fibonacci_2(4)
+```
+
+```{r fibonacci_3}
+fibonacci_1(5)
+```

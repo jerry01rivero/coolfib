@@ -1,0 +1,17 @@
+Package: coolfib
+Title: Fibonacci algorithms
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "First",
+           family = "Last",
+           role = c("aut", "cre"),
+           email = "gerardo.rivero@bancoazteca.com.mx",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: 3 different functions that calculate the n-th fibonacci number.
+License: What license it uses
+Encoding: UTF-8
+LazyData: true
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
