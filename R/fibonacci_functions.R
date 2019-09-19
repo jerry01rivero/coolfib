@@ -1,14 +1,16 @@
 #' Get the n-th Fibonacci's number
 #'
 #' This is a function that print the n-th Fibonacci's number
-#' Change the \code{x} to obtain the n-th Fibonacci's number
+#' Change \code{x} to obtain the n-th Fibonacci's number
 #'
-#' @param to_print x non negative integer
+#' @param x non negative integer
 #'
 #' @return This function returns the n-th Fibonacci's number
 #'
 #' @examples
 #' fibonacci_1(1)
+#'
+#' @importFrom magrittr '%>%'
 #'
 #' @export
 fibonacci_1 <-
@@ -18,6 +20,19 @@ fibonacci_1 <-
          else    (fibonacci_1(x - 1) + fibonacci_1(x - 2)) %>% return
   }
 
+#' Get the n-th Fibonacci's number
+#'
+#' This is a function that print the n-th Fibonacci's number
+#' Change \code{x} to obtain the n-th Fibonacci's number
+#'
+#' @param x non negative integer
+#'
+#' @return This function returns the n-th Fibonacci's number
+#'
+#' @examples
+#' fibonacci_2(1)
+#'
+#' @export
 fibonacci_2 <-
   function(x) {
 
@@ -46,7 +61,21 @@ fibonacci_2 <-
 
   }
 
-# Con el golden ratio
+#' Get the n-th Fibonacci's number
+#'
+#' This is a function that print the n-th Fibonacci's number using the golden ratio
+#' Change \code{x} to obtain the n-th Fibonacci's number
+#'
+#' @param x non negative integer
+#'
+#' @return This function returns the n-th Fibonacci's number
+#'
+#' @examples
+#' fibonacci_2(1)
+#'
+#' @importFrom magrittr '%>%'
+#'
+#' @export
 fibonacci_3 <-
   function(x) {
     a <- (1 + sqrt(5)) / 2 # Golden ratio

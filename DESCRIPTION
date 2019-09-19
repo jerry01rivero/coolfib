@@ -8,10 +8,16 @@ Authors@R:
            email = "gerardo.rivero@bancoazteca.com.mx",
            comment = c(ORCID = "YOUR-ORCID-ID"))
 Description: 3 different functions that calculate the n-th fibonacci number.
-License: What license it uses
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Suggests: 
     knitr,
-    rmarkdown
+    rmarkdown,
+    testthat (>= 2.1.0)
 VignetteBuilder: knitr
+RoxygenNote: 6.1.1
+Imports: 
+    magrittr
+Depends:
+    R (>= 3.6)
